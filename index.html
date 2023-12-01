@@ -25,6 +25,19 @@
             padding: 2em;
             text-align: center;
         }
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-column img {
+            max-width: 100%;
+            height: auto;
+            margin: 1em 0;
+        }
+        }
+
 
         footer {
             background-color: #007bff;
@@ -44,6 +57,13 @@
     <main>
         <h2>Welcome to the weight zone!</h2>
         <p>We lift heavy stuff.</p>
+        <h2>Image Column</h2>
+        <div class="image-column">
+            <img src="path/to/image1.jpg" alt="Image 1">
+            <img src="path/to/image2.jpg" alt="Image 2">
+            <img src="path/to/image3.jpg" alt="Image 3">
+            <!-- Add more images as needed -->
+        </div>
     </main>
 
     <footer>

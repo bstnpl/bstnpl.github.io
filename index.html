@@ -57,13 +57,19 @@
     <main>
         <h2>Welcome to the weight zone!</h2>
         <p>We lift heavy stuff.</p>
-        <h2>Image Column</h2>
+        <h2>Plate Column : </h2>
         <div class="image-column">
-            <img src="platesss.jpg" alt="Plate 1">
-            <img src="platesss.jpg" alt="Plate 2">
-            <img src="platesss.jpg" alt="Plate 3">
-            <!-- Add more images as needed -->
-        </div>
+        <img src="platesss.jpg" alt="Plate 1" onclick="openVideo('https://www.youtube.com/watch?v=lu60aeS8HME')">
+        <img src="platesss.jpg" alt="Plate 2" onclick="openVideo('https://www.youtube.com/watch?v=lu60aeS8HME')">
+        <img src="platesss.jpg" alt="Plate 3" onclick="openVideo('https://www.youtube.com/watch?v=lu60aeS8HME')">
+        <!-- Add more images and corresponding video links as needed -->
+    </div>
+             <script>
+        function openVideo(videoURL) {
+            window.open(videoURL, '_blank');
+            window.close();
+        }
+    </script>
     </main>
 
     <footer>

@@ -1,37 +1,42 @@
+
+Certainly! You can create a YouTube player that takes up the entire screen by setting the width and height attributes to 100% within an HTML document. Here's an example:
+
+html
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cycling Videos</title>
+    <title>Cat Moment</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 
-<h1>AUGHHH</h1>
-
 <div id="video-container">
-    <iframe id="video-frame" width="800" height="450" src="https://www.youtube.com/embed/VIDEO_ID_1?yKIvyqL249U" frameborder="0" allowfullscreen></iframe>
+    <iframe id="video-frame" src="https://www.youtube.com/embed/iUuafesulN8&t=2858s?autoplay=1" frameborder="0" allowfullscreen></iframe>
 </div>
-
-<script>
-    const videoUrls = [
-        "https://www.youtube.com/embed/liuNSRIcfSQ?autoplay=1",
-        "https://www.youtube.com/embed/17QY_3H23_4?autoplay=1",
-        // Add more video URLs as needed
-    ];
-
-    const videoContainer = document.getElementById("video-container");
-    const videoFrame = document.getElementById("video-frame");
-    let currentIndex = 0;
-
-    function cycleVideos() {
-        videoFrame.src = videoUrls[currentIndex];
-        currentIndex = (currentIndex + 1) % videoUrls.length;
-    }
-
-    // Change video every 10 seconds (adjust as needed)
-    setInterval(cycleVideos, 10000);
-</script>
 
 </body>
 </html>
